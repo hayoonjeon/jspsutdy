@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>프론트엔드 개발자 지원서</h1>
+<p>HTML,CSS,Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+<hr>
+<form action="/servlet/Ex09" method="post">
+
+<h2>개인정보</h2>
+<p><label>이름 : <input type="text" name=username placeholder="공백없이 입력하세요."> </label> </p> 
+<p><label>연락처 : <input type="tel" name=userphone > </label></p> 
+<h2>지원 분야</h2>
+
+<p><label><input type="radio" name=op value="pub">웹 퍼블리싱<label> </p> 
+<p><label><input type="radio" name=op value="wep">웹 어플리케이션 개발<label>  </p> 
+<p><label><input type="radio" name=op value="env">개발 환경 개선 <label>  </p> 
+
+<h2>지원 동기</h2>
+
+<textarea rows="10" cols="30" placeholder="본사 지원동기를 간략히 써 주세요." name=text ;></textarea>
+<br>
+<input type="hidden" name="cmd" value="1">
+<input type="submit" value="접수하기">
+<input type="reset" value="다시쓰기">
+</form>
+</body>
+</html>

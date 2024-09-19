@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>클라이언트의 여러 요청을 하나의 서블릿으로만들기. </h2>
+<form action="/servlet/Ex14">
+	<input type="hidden" name="cmd" value="1">
+	<input type="submit" value="오늘 날짜 구하기">
+</form>
+<hr>
+<form action="/servlet/Ex14">
+<input type="hidden" name="cmd" value="2">
+<input type="submit" value="오늘 운세 구하기">
+</form>
+<form action="/servlet/Ex14" method="post" autocomplete="on">
+	<fieldset>
+			<legend>계산기</legend>
+			<label>수1 : </label> <input type="number" name=s1> <br>
+			<label>수2 : </label> <input type="number" name=s2> <br>
+			<label>연산자 : 
+			</label>
+			<input type="radio" name="op" value="+">+</label> 
+			<input type="radio" name="op" value="-">-</label>
+			<input type="radio" name="op" value="*">*</label> 
+			<input type="radio" name="op" value="/">/</label> <br> 
+		
+			
+			<input type="hidden" name="cmd" value="3">
+			<input	type="submit" value="계산하기">
+		</fieldset>
+</form>
+
+
+</body>
+</html>

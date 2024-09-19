@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+fieldset {
+	width:400px;
+}
+</style>
+</head>
+<body>
+<form action="/servlet/Ex10" method="post">
+<fieldset>
+<legend>배열 파라미터 넘기기 </legend>
+<p>
+ <input type="checkbox" name="hobby" value="운동">운동
+ <input type="checkbox" name="hobby" value="게임">게임
+ <input type="checkbox" name="hobby" value="영화">영화
+ <input type="checkbox" name="hobby" value="독서">독서
+</p>
+ <hr>
+ <p> 웹 프로그래밍 :
+ 	<select name="web" size="5" multiple>
+ 	<option>HTML</option>
+ 	<option>CSS</option>
+ 	<option>JS</option>
+ 	<option>JSP</option>
+ 	<option>Spring</option>
+ 	
+ 	</select>
+ 
+ </p>
+
+
+</fieldset>
+<input type="submit" value="서버에 보내기">
+</form>
+</body>
+</html>
